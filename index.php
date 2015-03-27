@@ -6,14 +6,7 @@
 			<link rel="stylesheet" type="text/css" href="style.css">
 		</head>
 		<body>
-			<nav id="toolbar">
-				<ul>
-					<li>Home</li>
-					<li>Quête du DDG</li>
-					<li>Quête du Dofus Emeraude</li>
-					<li>Quête du Dofus Pourpre</li>
-				</ul>
-			</nav>
+			<?php include 'navbar.php';?>
 			<section>
 				<div id="displayer">
 					<img src="ddg.png" alt="Quêtes du Dofus des Glaces" />
