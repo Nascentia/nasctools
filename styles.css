@@ -1,0 +1,28 @@
+section
+{
+	width: 80%;
+	margin: auto;
+	text-align: justify;
+	z-index: -1;
+}
+
+#toolbar
+{
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 40px;
+	text-decoration: none;
+	box-shadow: 0px 0px 4px black;
+	background-color: rgba(255,255,128,0.6);
+}
+
+#toolbar li
+{
+	list-style-type: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
