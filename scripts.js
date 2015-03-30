@@ -48,6 +48,10 @@ function verifyState()
 		}
 		if(document.getElementById('etape'+i).className=='noacces')
 		{
+			if(document.getElementById('vb'+i).checked)
+			{
+				document.getElementById('pgbar').value--;
+			}
 			document.getElementById('vb'+i).checked=false;
 		}
 	}
