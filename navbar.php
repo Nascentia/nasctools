@@ -4,6 +4,7 @@
 			<title>Dofus Quests</title>
 			<meta charset="utf-8" />
 			<link rel="stylesheet" type="text/css" href="styles.css">
+			<script type="text/javascript" src="scripts.js"></script>
 		</head>
 		<body>
 			<nav id="toolbar">
