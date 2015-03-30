@@ -21,11 +21,13 @@
 			{
 			?>
 			<tr id="etape<?php echo $data['id'];?>">
-				<td><input id="vb<?php echo $data['id'];?>" name="chbx<?php echo $data['id'];?>" type="checkbox" value="1" onclick="verify(<?php echo $data['id'];?>);" /></td>
+				<td><input id="vb<?php echo $data['id'];?>" name="chbx<?php echo $data['id'];?>" type="checkbox" value="1" onclick="verifyValidity(<?php echo $data['id'];?>);verifyState();" /></td>
 				<td><?php echo $data['id'];?></td>
 				<td><?php echo $data['name'];?></td>
 				<td><?php echo $data['comment'];?></td>
-				<td style="display:none;" id="req<?php echo $data['id'];?>"><?php echo $data['require'];?></td>
+				<td style="display:none;" id="req1<?php echo $data['id'];?>"><?php echo $data['require1'];?></td>
+				<td style="display:none;" id="req2<?php echo $data['id'];?>"><?php echo $data['require2'];?></td>
+				<td style="display:none;" id="req3<?php echo $data['id'];?>"><?php echo $data['require3'];?></td>
 			</tr>
 			<?php
 		}
@@ -33,6 +35,6 @@
 		?>
 	</table>
 	<script type="text/javascript">
-		verif();
+		verifyState();
 	</script>
 <?php include 'footer.php';?>

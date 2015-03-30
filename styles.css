@@ -48,6 +48,14 @@ thead
 	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25));
 }
 
+.noacces
+{
+	background-color: #BBB;
+	background-image: -webkit-linear-gradient(-20deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25));
+	background-size: 35px 30px, 100% 100%, 100% 100%;
+
+}
+
 #pgbar
 {
   /* Reset the default appearance */
@@ -66,7 +74,7 @@ thead
 
 #pgbar::-webkit-progress-value {
   background-image:
-	   -webkit-linear-gradient(-45deg, 
+	   -webkit-linear-gradient(-20deg, 
 	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
 	                           rgba(0,0, 0, .1) 66%, transparent 66%),
 	   -webkit-linear-gradient(top, 
