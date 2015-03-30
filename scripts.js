@@ -38,12 +38,20 @@ function verifyState()
 			{
 				document.getElementById('etape'+i).className='noacces';
 			}
+			else if (!document.getElementById('vb'+i).checked)
+			{
+				document.getElementById('etape'+i).className='';
+			}
 		}
 		else if(document.getElementById('req3'+i).innerHTML!="0")
 		{
 			if(!document.getElementById('vb'+document.getElementById('req3'+i).innerHTML).checked)
 			{
 				document.getElementById('etape'+i).className='noacces';
+			}
+			else if (!document.getElementById('vb'+i).checked)
+			{
+				document.getElementById('etape'+i).className='';
 			}
 		}
 		if(document.getElementById('etape'+i).className=='noacces')

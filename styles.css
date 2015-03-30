@@ -1,6 +1,11 @@
+*
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
 section
 {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	text-align: justify;
 	z-index: -1;
@@ -9,7 +14,7 @@ section
 #toolbar
 {
 	width: 100%;
-	text-align: center;
+	text-align: right;
 	position: fixed;
 	top:0;
 	left: 0;
@@ -25,7 +30,21 @@ section
 	list-style-type: none;
 	display: inline;
 	padding: 0;
-	margin: 0;
+	margin-right: 10px;
+}
+
+#loadbutton
+{
+	position: fixed;
+	top: 10px;
+	left: 320px;
+}
+
+#savebutton
+{
+	position: fixed;
+	top: 10px;
+	left:270px;
 }
 
 table, table tr, table td
@@ -52,7 +71,7 @@ thead
 {
 	background-color: #BBB;
 	background-image: -webkit-linear-gradient(-20deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25));
-	background-size: 35px 30px, 100% 100%, 100% 100%;
+	background-size: 35px 45px, 100% 100%, 100% 100%;
 
 }
 
@@ -61,7 +80,9 @@ thead
   /* Reset the default appearance */
   -webkit-appearance: none;
    appearance: none;
-
+  position: fixed;
+  top: 10px;
+  left: 10px;
   width: 250px;
   height: 20px;
 }
