@@ -15,8 +15,6 @@
 				?>
 					<progress id="pgbar" max="108" value="0"></progress>
 					<button id="loadbutton">Load</button>
-					<form method="post" action="save.php">
-						<input type="submit" value="Save" id="savebutton" />
 				<?php
 					}
 				?>
