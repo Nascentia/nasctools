@@ -1,11 +1,14 @@
 <?php
-	$loaded=fopen('loaded.sav','r+');
-	for ($i=1; $i<106; $i++) { 
+	if(file_exists('loaded.sav'))
+	{
+		$loaded=fopen('loaded.sav','r+');
+		for ($i=1; $i<106; $i++) { 
 		$saved[$i]=fgetc($loaded);
-		fseek($loaded,$i-1);
-		fputs($loaded,'0');
 	}
 	fclose($loaded);
+
+	unlink('loaded.sav');
+	}
 ?>
 <?php include 'navbar.php';?>
 	<section>
@@ -48,7 +51,7 @@
 	<div id="loader" style="display:none;">
 		<form action="load.php" method="post" enctype="multipart/form-data">
 			<label for="loadedfile">Télécharger une sauvegarde : </label><input type="file" name="loadedfile">
-			<input type="submit" value="Load" />
+			<input type="submit" value="Load"/>
 		</form>
 	</div>
 	<script type="text/javascript">

@@ -21,8 +21,6 @@
 				<ul>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="ddg.php">Quête du DDG</a></li>
-					<li><a href="#">Quête du Dofus Emeraude</a></li>
-					<li><a href="#">Quête du Dofus Pourpre</a></li>
 				</ul>
 			</nav>
 			<noscript class="msg">Le bon fonctionnement de la cheklist nécessite l'activation du JavaScript. Si vous n'avez pas désactivé le JavaScript, il se peut que vous utilisiez un navigateur ancien, qui peut être source de plusieurs problèmes. Pensez à le changer.</noscript>
