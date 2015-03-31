@@ -39,7 +39,7 @@ function verifyState()
 			if(!document.getElementById('vb'+document.getElementById('req2'+i).innerHTML).checked)
 			{
 				document.getElementById('etape'+i).className='noacces';
-				f2=true;
+				f2=true
 			}
 			else if (!document.getElementById('vb'+i).checked&&!f1)
 			{
@@ -64,6 +64,18 @@ function verifyState()
 				document.getElementById('pgbar').value--;
 			}
 			document.getElementById('vb'+i).checked=false;
+		}
+	}
+}
+
+function verifyOnReload()
+{
+	for(var i=1;i<106;i++)
+	{
+		if (document.getElementById('vb'+i).checked) 
+		{
+			document.getElementById('etape'+i).className='valid';
+			document.getElementById('pgbar').value++;
 		}
 	}
 }

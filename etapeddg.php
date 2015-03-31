@@ -23,7 +23,7 @@
 					{
 					?>
 					<tr id="etape<?php echo $data['id'];?>">
-						<td><input id="vb<?php echo $data['id'];?>" name="chbx<?php echo $data['id'];?>" type="checkbox" value="1" onclick="verifyValidity(<?php echo $data['id'];?>);verifyState();" /></td>
+						<td><input id="vb<?php echo $data['id'];?>" name="chbx<?php echo $data['id'];?>" type="checkbox" <?php if(isset($saved)&&$saved!=0){echo "checked";} ?> value="1" onclick="verifyValidity(<?php echo $data['id'];?>);verifyState();" /></td>
 						<td><?php echo $data['id'];?></td>
 						<td><?php echo $data['name'];?></td>
 						<td><?php echo $data['comment'];?></td>
@@ -40,5 +40,6 @@
 	</section>
 	<script type="text/javascript">
 		verifyState();
+		verifyOnReload();
 	</script>
 <?php include 'footer.php';?>
