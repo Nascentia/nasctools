@@ -41,6 +41,19 @@ section
 	left: 320px;
 }
 
+#loader
+{
+	width: 550px;
+	height: 25px;
+	border-radius: 10px;
+	position: fixed;
+	top: 40px;
+	left: 320px;
+	padding: 10px;
+	background-color: #FFF;
+	box-shadow: 0 0 10px black;
+}
+
 #savebutton
 {
 	position: fixed;

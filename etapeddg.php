@@ -1,7 +1,13 @@
+<?php
+	$loaded=fopen('loaded.sav','r+');
+	for ($i=1; $i<106; $i++) { 
+		$saved[$i]=fgetc($loaded);
+		fseek($loaded,$i-1);
+		fputs($loaded,'0');
+	}
+	fclose($loaded);
+?>
 <?php include 'navbar.php';?>
-	<div id="progbar">
-		<p> Progression :</p>
-	</div>
 	<section>
 		<form method="post" action="save.php">
 			<input type="submit" value="Save" id="savebutton" />
@@ -19,11 +25,12 @@
 						die('Error : '.$e->getMessage());
 					}
 					$quer=$bdd->query('SELECT * FROM ddg');
+					$i=1;
 					while ($data=$quer->fetch())
 					{
 					?>
 					<tr id="etape<?php echo $data['id'];?>">
-						<td><input id="vb<?php echo $data['id'];?>" name="chbx<?php echo $data['id'];?>" type="checkbox" <?php if(isset($saved)&&$saved!=0){echo "checked";} ?> value="1" onclick="verifyValidity(<?php echo $data['id'];?>);verifyState();" /></td>
+						<td><input id="vb<?php echo $data['id'];?>" name="chbx<?php echo $data['id'];?>" type="checkbox" <?php if(isset($saved[$i])&&$saved[$i]!=0){echo "checked";}$i++;?> value="1" onclick="verifyValidity(<?php echo $data['id'];?>);verifyState();" /></td>
 						<td><?php echo $data['id'];?></td>
 						<td><?php echo $data['name'];?></td>
 						<td><?php echo $data['comment'];?></td>
@@ -38,6 +45,12 @@
 			</table>
 		</form>
 	</section>
+	<div id="loader" style="display:none;">
+		<form action="load.php" method="post" enctype="multipart/form-data">
+			<label for="loadedfile">Télécharger une sauvegarde : </label><input type="file" name="loadedfile">
+			<input type="submit" value="Load" />
+		</form>
+	</div>
 	<script type="text/javascript">
 		verifyState();
 		verifyOnReload();

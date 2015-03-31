@@ -14,7 +14,7 @@
 					if ($host == 'localhost/dofusquests/etapeddg.php') {
 				?>
 					<progress id="pgbar" max="105" value="0"></progress>
-					<button id="loadbutton">Load</button>
+					<button id="loadbutton" onclick="toggle('loader')">Load</button>
 				<?php
 					}
 				?>

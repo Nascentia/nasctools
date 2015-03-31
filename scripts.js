@@ -79,3 +79,18 @@ function verifyOnReload()
 		}
 	}
 }
+
+function toggle(n)
+{
+	div=document.getElementById(n);
+	if (div.style.display=='none') 
+	{
+		div.style.display='block';
+		document.getElementById('loadbutton').innerHTML='X';
+	}
+	else
+	{
+		div.style.display='none';
+		document.getElementById('loadbutton').innerHTML='Load';
+	}
+}
