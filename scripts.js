@@ -18,27 +18,30 @@ function verifyValidity(n)
 
 function verifyState()
 {
-	for(var i=1;i<58;i++)
+	var f1=false,
+		f2=false;
+	for(var i=1;i<106;i++)
 	{
 		if(document.getElementById('req1'+i).innerHTML!="0")
 		{
 			if(!document.getElementById('vb'+document.getElementById('req1'+i).innerHTML).checked)
 			{
 				document.getElementById('etape'+i).className='noacces';
-
+				f1=true;
 			}
 			else if (!document.getElementById('vb'+i).checked)
 			{
 				document.getElementById('etape'+i).className='';
 			}
 		}
-		else if(document.getElementById('req2'+i).innerHTML!="0")
+		if(document.getElementById('req2'+i).innerHTML!="0")
 		{
 			if(!document.getElementById('vb'+document.getElementById('req2'+i).innerHTML).checked)
 			{
 				document.getElementById('etape'+i).className='noacces';
+				f2=true;
 			}
-			else if (!document.getElementById('vb'+i).checked)
+			else if (!document.getElementById('vb'+i).checked&&!f1)
 			{
 				document.getElementById('etape'+i).className='';
 			}
@@ -49,7 +52,7 @@ function verifyState()
 			{
 				document.getElementById('etape'+i).className='noacces';
 			}
-			else if (!document.getElementById('vb'+i).checked)
+			else if (!document.getElementById('vb'+i).checked&&!f2)
 			{
 				document.getElementById('etape'+i).className='';
 			}

@@ -13,7 +13,7 @@
 					$host = $_SERVER['SERVER_NAME']  . $_SERVER['REQUEST_URI'];
 					if ($host == 'localhost/dofusquests/etapeddg.php') {
 				?>
-					<progress id="pgbar" max="108" value="0"></progress>
+					<progress id="pgbar" max="105" value="0"></progress>
 					<button id="loadbutton">Load</button>
 				<?php
 					}
