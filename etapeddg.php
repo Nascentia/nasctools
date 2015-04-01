@@ -12,6 +12,14 @@
 ?>
 <?php include 'navbar.php';?>
 	<section>
+		<h1>Quête du Dofus des Glaces</h1>
+		<p>
+			<span style="text-decoration:underline;font-weight:bold;">Disclamer :</span><br>
+			Si vous débutez tout juste la quête il vous est fortement conseillé de remplir les étapes dans l'ordre ! En effet la check list suivante est étudiée de façon à ne refaire aucun donjon deux fois de suite.
+			Les étapes où il est nécessaire de dropper des ressources sur le même type de monstre sont également mises côtes à côtes.<br><br>
+
+			<span style="color:red;font-weight:bold;">/!\ ATTENTION /!\ : Raffraichir la page entraine la perte de la progression. Veillez à sauvegarder régulièrement.</span>
+		</p>
 		<form method="post" action="save.php">
 			<input type="submit" value="Save" id="savebutton" />
 			<table>
