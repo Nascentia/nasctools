@@ -11,17 +11,18 @@
 	}
 ?>
 <?php include 'navbar.php';?>
-	<section>
+	<section id="ddg_setion" class="quest">
 		<h1>Quête du Dofus des Glaces</h1>
-		<p>
+		<div id="ddginfobox" class="displaybox">
 			<span style="text-decoration:underline;font-weight:bold;">Disclamer :</span><br>
 			Si vous débutez tout juste la quête il vous est fortement conseillé de remplir les étapes dans l'ordre ! En effet la check list suivante est étudiée de façon à ne refaire aucun donjon deux fois de suite.
-			Les étapes où il est nécessaire de dropper des ressources sur le même type de monstre sont également mises côtes à côtes.<br><br>
+			Les étapes où il est nécessaire de dropper des ressources sur le même type de monstre sont également mises côtes à côtes.<br>
+			Ce site se contente de lister les quêtes sans expliquer comment les résoudre.<br>
 
 			<span style="color:red;font-weight:bold;">/!\ ATTENTION /!\ : Raffraichir la page entraine la perte de la progression. Veillez à sauvegarder régulièrement.</span>
-		</p>
+		</div>
 		<form method="post" action="save.php">
-			<input type="submit" value="Save" id="savebutton" />
+			<input type="submit" value="Save" id="savebutton" onclick="window.onbeforeunload=null;" />
 			<table>
 				<thead>
 					<td></td>
@@ -56,6 +57,9 @@
 			</table>
 		</form>
 	</section>
+	<p id="pgbartxt">Progression</p>
+	<progress id="pgbar" max="105" value="0"></progress>
+	<button id="loadbutton" onclick="toggle('loader');window.onbeforeunload=null;">Load</button>
 	<div id="loader" style="display:none;">
 		<form action="load.php" method="post" enctype="multipart/form-data">
 			<label for="loadedfile">Télécharger une sauvegarde : </label><input type="file" name="loadedfile">
@@ -65,5 +69,7 @@
 	<script type="text/javascript">
 		verifyState();
 		verifyOnReload();
+
+		window.onbeforeunload = function(){return "Attention ! En quittant cette page vous risquez de perdre votre progression. Pensez à sauvegarder avant."}
 	</script>
 <?php include 'footer.php';?>
