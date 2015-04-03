@@ -18,8 +18,6 @@
 			Si vous débutez tout juste la quête il vous est fortement conseillé de remplir les étapes dans l'ordre ! En effet la check list suivante est étudiée de façon à ne refaire aucun donjon deux fois de suite.
 			Les étapes où il est nécessaire de dropper des ressources sur le même type de monstre sont également mises côtes à côtes.<br>
 			Ce site se contente de lister les quêtes sans expliquer comment les résoudre.<br>
-
-			<span style="color:red;font-weight:bold;">/!\ ATTENTION /!\ : Raffraichir la page entraine la perte de la progression. Veillez à sauvegarder régulièrement.</span>
 		</div>
 		<form method="post" action="save.php">
 			<input type="submit" value="Save" id="savebutton" onclick="window.onbeforeunload=null;" />
@@ -32,7 +30,7 @@
 				</thead>
 			<?php 
 					try {
-						$bdd = new PDO('mysql:host=localhost;dbname=dofusquests','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+						$bdd = new PDO('mysql:host=sql2.olympe.in;dbname=0ys3ma3h','0ys3ma3h','moli7530',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 					} catch (Exception $e) {
 						die('Error : '.$e->getMessage());
 					}

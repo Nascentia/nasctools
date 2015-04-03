@@ -24,14 +24,14 @@ body
 	list-style-image:url('img/dofusicon.png');
 }
 
-#displayer ul li a
+#displayer ul li a, footer a 
 {
 	font-weight: bold;
 	text-decoration: none;
 	color: #3042A1;
 }
 
-#displayer ul li a:hover
+#displayer ul li a:hover, footer a:hover
 {
 	text-decoration: underline;
 }

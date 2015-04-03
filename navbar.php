@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 		<head>
-			<title>Dofus Quests</title>
+			<title>Nasc Tools</title>
 			<meta charset="utf-8" />
 			<link rel="stylesheet" type="text/css" href="styles.css">
 			<script type="text/javascript" src="scripts.js"></script>
