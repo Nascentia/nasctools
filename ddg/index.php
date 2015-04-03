@@ -10,7 +10,7 @@
 	unlink('loaded.sav');
 	}
 ?>
-<?php include 'navbar.php';?>
+<?php include '../navbar.php';?>
 	<section id="ddg_setion" class="quest">
 		<h1>Quête du Dofus des Glaces</h1>
 		<div id="ddginfobox" class="displaybox">
@@ -72,4 +72,4 @@
 
 		window.onbeforeunload = function(){return "Attention ! En quittant cette page vous risquez de perdre votre progression. Pensez à sauvegarder avant."}
 	</script>
-<?php include 'footer.php';?>
+<?php include '../footer.php';?>
