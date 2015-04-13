@@ -1,4 +1,4 @@
-<?php include 'nasc.olympe.in/navbar.php';?>
+<?php include 'navbar.php';?>
 <h1 id="globaltitle">Nasc tools</h1>
 <section>
 	<div id="displayer" class="displaybox">
@@ -8,4 +8,4 @@
 		</ul>
 	</div>
 </section>
-<?php include 'http://nasc.olympe.in/footer.php';?>
+<?php include 'footer.php';?>
