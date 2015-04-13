@@ -4,7 +4,7 @@
 	<div id="displayer" class="displaybox">
 		<p>Liste des outils disponibles :</p>
 		<ul>
-			<li><a href="etapeddg.php"> Check-list : Quête du Dofus des Glaces</a></li>
+			<li><a href="etapeddg.php"><span style="color:red;">[Beta]</span> Check-list : Quête du Dofus des Glaces</a></li>
 		</ul>
 	</div>
 </section>
