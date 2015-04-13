@@ -15,7 +15,7 @@ h1
 
 body
 {
-	background:url('img/chateau_screen_big.png') no-repeat;
+	background:url('img/chateau_screen_big.png') no-repeat fixed;
 	background-color: #fff9c7;
 }
 
@@ -156,6 +156,11 @@ tbody tr
 	box-shadow: 0 0 10px #fff;
 	padding: 10px;
 	border-radius: 10px;
+}
+
+#ddginfobox
+{
+	margin-bottom: 10px;
 }
 
 #pgbartxt
